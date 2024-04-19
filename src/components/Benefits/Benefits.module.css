@@ -5,7 +5,7 @@
     margin-top: 10vh;
 }
 
-.benefit h1{
+.benefit h2{
     font-size: 25px;
     font-weight: 400;
 
@@ -34,11 +34,11 @@
         width: 100%;
     }
 
-    .benefit h1, .benefit p{
+    .benefit h2, .benefit p{
         text-align: center;
     }
 
-    .benefit h1{
+    .benefit h2{
         font-size: 20px;
     }
 

@@ -32,7 +32,7 @@
     text-decoration: none;
 }
 
-.article a h1{
+.article a h2{
     font-size: 22px;
     font-weight: 400;
 
@@ -41,7 +41,7 @@
     color: var(--darkBlue);
 }
 
-.article a h1:hover{
+.article a h2:hover{
     color: var(--limeGreen);
 }
 
@@ -78,7 +78,7 @@
         font-size: 12px;
     }
     
-    .article a h1{
+    .article a h2{
         font-size: 18px;
     }
     

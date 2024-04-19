@@ -14,15 +14,12 @@
 
 .containerLinks ul{
     display: flex;
+    column-gap: 2vw;
 
     list-style-type: none;
 
     margin: 0;
     padding: 0;
-}
-
-.containerLinks ul li{
-    margin-inline: 1vw;
 }
 
 .containerLinks ul li a{

@@ -39,16 +39,16 @@ export const Articles = () => {
         <div className={styles.containerArticles}>
             {
                 articlesList.map((article, index) => (
-                    <section className={styles.article} key={index}>
+                    <article className={styles.article} key={index}>
                         <img src={article.url} alt="notice image" />
                         <div>
                             <address rel="author">{article.author}</address>
                             <a href="">
-                                <h1>{article.title}</h1>
+                                <h2>{article.title}</h2>
                             </a>
                             <p>{article.text}</p>
                         </div>
-                    </section>
+                    </article>
                 ))
             }
         </div>

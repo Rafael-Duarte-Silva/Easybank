@@ -35,11 +35,11 @@ export const Benefits = () => {
         <div className={styles.containerBenefits}>
             {
                 benefitsList.map((benefit, index) => (
-                    <section className={styles.benefit} key={index}>
+                    <article className={styles.benefit} key={index}>
                         <img src={benefit.url} alt={`example image: ${benefit.title}`} />
-                        <h1>{benefit.title}</h1>
+                        <h2>{benefit.title}</h2>
                         <p>{benefit.text}</p>
-                    </section>
+                    </article>
                 ))
             }
         </div>
