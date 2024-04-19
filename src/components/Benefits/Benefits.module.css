@@ -1,0 +1,33 @@
+.benefit h1{
+    font-size: 25px;
+    font-weight: 400;
+
+    color: var(--darkBlue);
+}
+
+.benefit p{
+    font-size: 18px;
+    font-weight: 400;
+
+    color: var(--grayishBlue);
+
+    text-align: left;
+}
+
+@media screen and (max-width: 800px){
+    .benefit{
+        width: 100%;
+    }
+
+    .benefit h1, .benefit p{
+        text-align: center;
+    }
+
+    .benefit h1{
+        font-size: 20px;
+    }
+
+    .benefit p{
+        font-size: 14px;
+    }
+}

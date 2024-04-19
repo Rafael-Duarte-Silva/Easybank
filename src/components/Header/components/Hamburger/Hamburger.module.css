@@ -1,0 +1,9 @@
+.Hamburger{
+    display: none;
+}
+
+@media screen and (max-width: 800px){
+    .Hamburger{
+        display: block;
+    }
+}

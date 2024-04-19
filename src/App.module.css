@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100..900&display=swap');
+
+:root{
+    --darkBlue: hsl(233, 26%, 24%);
+    --limeGreen: hsl(136, 65%, 51%);
+    --brightCyan: hsl(192, 70%, 51%);
+
+    --grayishBlue: hsl(233, 8%, 62%);
+    --lightGrayishBlue: hsl(220, 16%, 96%);
+    --veryLightGray: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+}
+
+.containerWhyEasyBank > h1, .containerLastArticles > h1, .containerHome h1{
+    font-weight: 400;
+
+    color: var(--darkBlue);
+}
+
+.containerWhyEasyBank > h1, .containerLastArticles > h1{
+    font-size: 40px;
+}
+
+.containerHome p, .containerWhyEasyBank > p{
+    font-weight: 400;
+
+    color: var(--grayishBlue);
+
+    text-align: left;
+}
+
+.containerHome{
+    width: 100%;
+    height: 90vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--veryLightGray);
+    background-image: url('./assets/bg-intro-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: 43vw;
+    background-size: 98vw;
+}
+
+.containerHome section{
+    width: 30%;
+}
+
+.containerHome h1{
+    font-size: 52px;
+
+    margin-bottom: 3vh;
+}
+
+.containerHome p{
+    font-size: 17px;
+
+    margin-block: 0 4vh;
+}
+
+.containerHome img{
+    width: 53vw;
+
+    transform: translate(17.5vw, 7.5vh);
+}
+
+.containerWhyEasyBank, .containerLastArticles{
+    width: 100%;
+
+    box-sizing: border-box;
+    padding: 40px 20px;
+}
+
+.containerWhyEasyBank{
+    height: 80vh;
+
+    background-color: var(--lightGrayishBlue);
+}
+
+.containerWhyEasyBank > p{
+    width: 46vw;
+
+    font-size: 18px;
+}
+
+.containerBenefits{
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(21vw, 1fr));
+    column-gap: 1.5vw;
+
+    margin-top: 10vh;
+}
+
+.containerLastArticles{
+    height: 100vh;
+
+    background-color: var(--veryLightGray);
+}
+
+.containerArticles{
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(21vw, 1fr));
+    column-gap: 1.5vw;
+
+    margin-top: 6vh;
+}
+
+@media screen and (max-width: 800px){
+    .containerWhyEasyBank > h1, .containerLastArticles > h1{
+        font-size: 30px;
+    }
+
+    .containerHome p, .containerWhyEasyBank > p{
+        text-align: center;
+    }
+
+    .containerHome{
+        height: 100vh;
+
+        flex-direction: column-reverse;
+    
+        background-image: url('./assets/bg-intro-mobile.svg');
+        background-position: center -2vh;
+        background-size: 98vw;
+    }
+
+    .containerHome img{
+        width: 90vw;
+    
+        transform: translateY(-12.5vh);
+    }
+
+    .containerHome section{
+        width: 80%;
+
+        text-align: center;
+    }
+
+    .containerHome h1{
+        font-size: 38px;
+    
+        margin-block: -10vh 3vh;
+    }
+
+    .containerWhyEasyBank, .containerLastArticles{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .containerWhyEasyBank{
+        height: max-content;
+
+        text-align: center;
+    }
+
+    .containerWhyEasyBank > h1{
+        margin-bottom: 0;
+    }
+    
+    .containerWhyEasyBank > p{
+        width: 80vw;
+    
+        font-size: 14px;
+    }
+    
+    .containerBenefits{
+        display: flex;
+        flex-direction: column;
+    
+        margin-top: 10vh;
+    }
+
+    .containerLastArticles{
+        height: max-content;
+    
+        background-color: var(--veryLightGray);
+    }
+
+    .containerLastArticles > h1{
+        margin-bottom: 0vh;
+    }
+    
+    .containerArticles{
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 4vh;
+    }
+}
