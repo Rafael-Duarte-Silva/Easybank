@@ -1,8 +1,8 @@
 import styles from './Header.module.css';
 
-import logo from '../../assets/logo.svg';
-import { Hamburger } from './components/Hamburger';
+import logo from '../../assets/logos/logo.svg';
 
+import { Hamburger } from './components/Hamburger';
 import { ButtonRequest } from '../ButtonRequest';
 
 type HeaderProps = {
@@ -13,7 +13,7 @@ type HeaderProps = {
 export const Header = ({active, toggleMode}: HeaderProps) => {
   return (
     <header className={styles.containerHeader}>
-      <img src={logo} alt="logo da EasyBank" />
+      <img src={logo} alt="EasyBank logo" />
 
       <nav className={styles.containerLinks}>
         <ul>

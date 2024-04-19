@@ -11,24 +11,6 @@
     --white: hsl(0, 0%, 100%);
 }
 
-.containerWhyEasyBank > h1, .containerLastArticles > h1, .containerHome h1{
-    font-weight: 400;
-
-    color: var(--darkBlue);
-}
-
-.containerWhyEasyBank > h1, .containerLastArticles > h1{
-    font-size: 40px;
-}
-
-.containerHome p, .containerWhyEasyBank > p{
-    font-weight: 400;
-
-    color: var(--grayishBlue);
-
-    text-align: left;
-}
-
 .containerHome{
     width: 100%;
     height: 90vh;
@@ -48,10 +30,24 @@
     width: 30%;
 }
 
+.containerHome h1, .containerWhyEasyBank > h1, .containerLastArticles > h1{
+    font-weight: 400;
+
+    color: var(--darkBlue);
+}
+
 .containerHome h1{
     font-size: 52px;
 
     margin-bottom: 3vh;
+}
+
+.containerHome p, .containerWhyEasyBank > p{
+    font-weight: 400;
+
+    color: var(--grayishBlue);
+
+    text-align: left;
 }
 
 .containerHome p{
@@ -71,6 +67,10 @@
 
     box-sizing: border-box;
     padding: 40px 20px;
+}
+
+.containerWhyEasyBank > h1, .containerLastArticles > h1{
+    font-size: 40px;
 }
 
 .containerWhyEasyBank{
@@ -110,16 +110,9 @@
 }
 
 @media screen and (max-width: 800px){
-    .containerWhyEasyBank > h1, .containerLastArticles > h1{
-        font-size: 30px;
-    }
-
-    .containerHome p, .containerWhyEasyBank > p{
-        text-align: center;
-    }
-
     .containerHome{
-        height: 100vh;
+        min-height: 100vh;
+        height: max-content;
 
         flex-direction: column-reverse;
     
@@ -146,6 +139,10 @@
         margin-block: -10vh 3vh;
     }
 
+    .containerHome p, .containerWhyEasyBank > p{
+        text-align: center;
+    }
+
     .containerWhyEasyBank, .containerLastArticles{
         display: flex;
         flex-direction: column;
@@ -156,6 +153,10 @@
         height: max-content;
 
         text-align: center;
+    }
+
+    .containerWhyEasyBank > h1, .containerLastArticles > h1{
+        font-size: 30px;
     }
 
     .containerWhyEasyBank > h1{
@@ -172,7 +173,7 @@
         display: flex;
         flex-direction: column;
     
-        margin-top: 10vh;
+        margin-top: 4.5vh;
     }
 
     .containerLastArticles{
@@ -189,6 +190,6 @@
         display: flex;
         flex-direction: column;
 
-        margin-top: 4vh;
+        margin-top: 3vh;
     }
 }

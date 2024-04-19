@@ -1,9 +1,9 @@
 import styles from './Articles.module.css';
 
-import imageCurrency from '../../assets/image-currency.jpg';
-import imageRestaurant from '../../assets/image-restaurant.jpg';
-import imagePlane from '../../assets/image-plane.jpg';
-import imageConfetti from '../../assets/image-confetti.jpg';
+import imageCurrency from '../../assets/images/image-currency.jpg';
+import imageRestaurant from '../../assets/images/image-restaurant.jpg';
+import imagePlane from '../../assets/images/image-plane.jpg';
+import imageConfetti from '../../assets/images/image-confetti.jpg';
 
 type ArticlesList = Array<{url: string, author: string, title: string, text: string}>;
 
@@ -37,7 +37,7 @@ export const Articles = () => {
 
     return articlesList.map((article, index) => (
         <section className={styles.article} key={index}>
-            <img src={article.url} alt="" />
+            <img src={article.url} alt="notice image" />
             <div>
                 <address rel="author">{article.author}</address>
                 <a href="">

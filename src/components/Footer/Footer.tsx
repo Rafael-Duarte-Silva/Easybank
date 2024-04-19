@@ -1,58 +1,65 @@
 import styles from './Footer.module.css';
 
-import logoWhite from '../../assets/logoWhite.svg';
+import logoWhite from '../../assets/logos/logoWhite.svg';
 
-import iconFacebook from '../../assets/icon-facebook.svg';
-import iconYoutube from '../../assets/icon-youtube.svg';
-import iconTwitter from '../../assets/icon-twitter.svg';
-import iconPinterest from '../../assets/icon-pinterest.svg';
-import iconInstagram from '../../assets/icon-instagram.svg';
+import iconFacebook from '../../assets/icons/icon-facebook.svg';
+import iconYoutube from '../../assets/icons/icon-youtube.svg';
+import iconTwitter from '../../assets/icons/icon-twitter.svg';
+import iconPinterest from '../../assets/icons/icon-pinterest.svg';
+import iconInstagram from '../../assets/icons/icon-instagram.svg';
 
+import iconActiveFacebook from '../../assets/icons/icon-activeFacebook.svg';
+import iconActiveYoutube from '../../assets/icons/icon-activeYoutube.svg';
+import iconActiveTwitter from '../../assets/icons/icon-activeTwitter.svg';
+import iconActivePinterest from '../../assets/icons/icon-activePinterest.svg';
+import iconActiveInstagram from '../../assets/icons/icon-activeInstagram.svg';
+
+import { SocialIcon } from './components/SocialIcon';
 import { ButtonRequest } from '../ButtonRequest';
 
 export const Footer = () => {
-    return (
-        <footer className={styles.containerFooter}>
-        <div className={styles.containerSocialMedias}>
-          <img src={logoWhite} alt="logo da EasyBank" />
+  return (
+    <footer className={styles.containerFooter}>
+      <div className={styles.containerSocialMedias}>
+        <img src={logoWhite} alt="EasyBank logo" />
 
-          <div>
-            <a href="">
-              <img src={iconFacebook} alt="icone do Facebook" />
-            </a>
-            <a href="">
-              <img src={iconYoutube} alt="icone do Youtube" />
-            </a>
-            <a href="">
-              <img src={iconTwitter} alt="icone do Twitter" />
-            </a>
-            <a href="">
-              <img src={iconPinterest} alt="icone do Pinterest" />
-            </a>
-            <a href="">
-              <img src={iconInstagram} alt="icone do Instagram" />
-            </a>
-          </div>
+        <div>
+          <a href="">
+            <SocialIcon activeIcon={iconActiveFacebook} icon={iconFacebook} alt='Facebook icon' />
+          </a>
+          <a href="">
+            <SocialIcon activeIcon={iconActiveYoutube} icon={iconYoutube} alt='Youtube icon' />
+          </a>
+          <a href="">
+            <SocialIcon activeIcon={iconActiveTwitter} icon={iconTwitter} alt='Twitter icon' />
+          </a>
+          <a href="">
+            <SocialIcon activeIcon={iconActivePinterest} icon={iconPinterest} alt='Pinterest icon' />
+          </a>
+          <a href="">
+            <SocialIcon activeIcon={iconActiveInstagram} icon={iconInstagram} alt='Instagram icon' />
+          </a>
         </div>
+      </div>
 
-        <div className={styles.containerFooterLinks}>
-          <ul>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Careers</a></li>
-            <li><a href="">Support</a></li>
-            <li><a href="">Privacy Policy</a></li>
-          </ul>
-        </div>
+      <div className={styles.containerFooterLinks}>
+        <ul>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Support</a></li>
+          <li><a href="">Privacy Policy</a></li>
+        </ul>
+      </div>
 
-        <div className={styles.containerCredits}>
-          <ButtonRequest/>
+      <div className={styles.containerCredits}>
+        <ButtonRequest />
 
-          <address>
-            © Easybank. All Rights Reserved
-          </address>
-        </div>
-      </footer>
-    );
+        <address>
+          © Easybank. All Rights Reserved
+        </address>
+      </div>
+    </footer>
+  );
 }

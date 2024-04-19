@@ -1,7 +1,7 @@
 import styles from './Hamburger.module.css';
 
-import iconCloseHamburger from '../../../../assets/icon-openHamburger.svg';
-import iconOpenHamburger from '../../../../assets/icon-closeHamburger.svg';
+import iconCloseHamburger from '../../../../assets/icons/icon-openHamburger.svg';
+import iconOpenHamburger from '../../../../assets/icons/icon-closeHamburger.svg';
 
 type HamburgerProps = {
     active: boolean;

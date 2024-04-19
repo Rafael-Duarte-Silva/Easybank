@@ -1,9 +1,9 @@
 import styles from './Benefits.module.css';
 
-import iconOnline from '../../assets/icon-online.svg';
-import iconBudgeting from '../../assets/icon-budgeting.svg';
-import iconOnboarding from '../../assets/icon-onboarding.svg';
-import iconApi from '../../assets/icon-api.svg';
+import iconOnline from '../../assets/icons/icon-online.svg';
+import iconBudgeting from '../../assets/icons/icon-budgeting.svg';
+import iconOnboarding from '../../assets/icons/icon-onboarding.svg';
+import iconApi from '../../assets/icons/icon-api.svg';
 
 type BenefitsList = Array<{url: string, title: string, text: string}>;
 
@@ -33,7 +33,7 @@ export const Benefits = () => {
 
     return benefitsList.map((benefit, index) => (
         <section className={styles.benefit} key={index}>
-            <img src={benefit.url} alt="" />
+            <img src={benefit.url} alt={`example image: ${benefit.title}`} />
             <h1>{benefit.title}</h1>
             <p>{benefit.text}</p>
         </section>

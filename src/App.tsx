@@ -1,6 +1,6 @@
 import styles from './App.module.css';
 
-import mockups from './assets/image-mockups.png';
+import mockups from './assets/images/image-mockups.png';
 
 import { Header } from './components/Header';
 import { Menu } from './components/Menu';
@@ -33,7 +33,7 @@ export const App = () => {
             <ButtonRequest/>
           </section>
 
-          <img src={mockups} alt="" />
+          <img src={mockups} alt="example image" />
         </div>
 
         <section className={styles.containerWhyEasyBank}>
