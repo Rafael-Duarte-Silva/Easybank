@@ -1,4 +1,4 @@
-# Huddle
+# EasyBank
 
 Esse projeto é um desafio de: [frontendmentor](https://www.frontendmentor.io/)
 
