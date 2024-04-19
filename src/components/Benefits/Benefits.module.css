@@ -1,3 +1,10 @@
+.containerBenefits{
+    display: flex;
+    column-gap: 1.5vw;
+
+    margin-top: 10vh;
+}
+
 .benefit h1{
     font-size: 25px;
     font-weight: 400;
@@ -15,10 +22,16 @@
 }
 
 @media screen and (max-width: 800px){
+    .containerBenefits{
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 3vh;
+    
+        margin-top: 4.5vh;
+    }
+
     .benefit{
         width: 100%;
-
-        margin-block: 1.5vh;
     }
 
     .benefit h1, .benefit p{

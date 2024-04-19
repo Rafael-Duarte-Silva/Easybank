@@ -5,7 +5,7 @@ import iconBudgeting from '../../assets/icons/icon-budgeting.svg';
 import iconOnboarding from '../../assets/icons/icon-onboarding.svg';
 import iconApi from '../../assets/icons/icon-api.svg';
 
-type BenefitsList = Array<{url: string, title: string, text: string}>;
+type BenefitsList = Array<{ url: string, title: string, text: string }>;
 
 export const Benefits = () => {
     const benefitsList: BenefitsList = [
@@ -31,11 +31,17 @@ export const Benefits = () => {
         }
     ];
 
-    return benefitsList.map((benefit, index) => (
-        <section className={styles.benefit} key={index}>
-            <img src={benefit.url} alt={`example image: ${benefit.title}`} />
-            <h1>{benefit.title}</h1>
-            <p>{benefit.text}</p>
-        </section>
-    ));
+    return (
+        <div className={styles.containerBenefits}>
+            {
+                benefitsList.map((benefit, index) => (
+                    <section className={styles.benefit} key={index}>
+                        <img src={benefit.url} alt={`example image: ${benefit.title}`} />
+                        <h1>{benefit.title}</h1>
+                        <p>{benefit.text}</p>
+                    </section>
+                ))
+            }
+        </div>
+    )
 }

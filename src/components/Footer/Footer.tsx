@@ -24,19 +24,19 @@ export const Footer = () => {
         <img src={logoWhite} alt="EasyBank logo" />
 
         <div>
-          <a href="">
+          <a href="https://www.facebook.com/" target="_blank">
             <SocialIcon activeIcon={iconActiveFacebook} icon={iconFacebook} alt='Facebook icon' />
           </a>
-          <a href="">
+          <a href="https://www.youtube.com/" target="_blank">
             <SocialIcon activeIcon={iconActiveYoutube} icon={iconYoutube} alt='Youtube icon' />
           </a>
-          <a href="">
+          <a href="https://www.twitter.com/" target="_blank">
             <SocialIcon activeIcon={iconActiveTwitter} icon={iconTwitter} alt='Twitter icon' />
           </a>
-          <a href="">
+          <a href="https://www.pinterest.com/" target="_blank">
             <SocialIcon activeIcon={iconActivePinterest} icon={iconPinterest} alt='Pinterest icon' />
           </a>
-          <a href="">
+          <a href="https://www.instagram.com/" target="_blank">
             <SocialIcon activeIcon={iconActiveInstagram} icon={iconInstagram} alt='Instagram icon' />
           </a>
         </div>

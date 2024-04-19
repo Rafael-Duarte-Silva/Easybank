@@ -1,3 +1,10 @@
+.containerArticles{
+    display: flex;
+    column-gap: 1.5vw;
+
+    margin-top: 6vh;
+}
+
 .article{
     background-color: var(--white);
 }
@@ -9,7 +16,7 @@
 .article img{
     width: 100%;
 
-    aspect-ratio: 1.2/1;
+    aspect-ratio: 1.4/1;
 
     border-radius: 5px 5px 0 0;
 }
@@ -48,10 +55,15 @@
 }
 
 @media screen and (max-width: 800px){
+    .containerArticles{
+        flex-direction: column;
+        row-gap: 4vh;
+
+        margin-top: 5vh;
+    }
+
     .article{
         width: 100%;
-
-        margin-block: 2.5vh;
     }
     
     .article div{

@@ -64,18 +64,19 @@
 
 .containerWhyEasyBank, .containerLastArticles{
     width: 100%;
+    height: max-content;
 
     box-sizing: border-box;
-    padding: 40px 20px;
+    padding: 80px 120px;
 }
 
 .containerWhyEasyBank > h1, .containerLastArticles > h1{
     font-size: 40px;
+
+    margin-top: 0;
 }
 
 .containerWhyEasyBank{
-    height: 80vh;
-
     background-color: var(--lightGrayishBlue);
 }
 
@@ -85,33 +86,13 @@
     font-size: 18px;
 }
 
-.containerBenefits{
-    display: grid;
-
-    grid-template-columns: repeat(4, minmax(21vw, 1fr));
-    column-gap: 1.5vw;
-
-    margin-top: 10vh;
-}
-
 .containerLastArticles{
-    height: 100vh;
-
     background-color: var(--veryLightGray);
-}
-
-.containerArticles{
-    display: grid;
-
-    grid-template-columns: repeat(4, minmax(21vw, 1fr));
-    column-gap: 1.5vw;
-
-    margin-top: 6vh;
 }
 
 @media screen and (max-width: 800px){
     .containerHome{
-        min-height: 100vh;
+        min-height: 92vh;
         height: max-content;
 
         flex-direction: column-reverse;
@@ -144,14 +125,16 @@
     }
 
     .containerWhyEasyBank, .containerLastArticles{
+        height: max-content;
+
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        padding: 60px 30px;
     }
     
     .containerWhyEasyBank{
-        height: max-content;
-
         text-align: center;
     }
 
@@ -168,28 +151,8 @@
     
         font-size: 14px;
     }
-    
-    .containerBenefits{
-        display: flex;
-        flex-direction: column;
-    
-        margin-top: 4.5vh;
-    }
-
-    .containerLastArticles{
-        height: max-content;
-    
-        background-color: var(--veryLightGray);
-    }
 
     .containerLastArticles > h1{
         margin-bottom: 0vh;
-    }
-    
-    .containerArticles{
-        display: flex;
-        flex-direction: column;
-
-        margin-top: 3vh;
     }
 }

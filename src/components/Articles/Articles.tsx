@@ -5,7 +5,7 @@ import imageRestaurant from '../../assets/images/image-restaurant.jpg';
 import imagePlane from '../../assets/images/image-plane.jpg';
 import imageConfetti from '../../assets/images/image-confetti.jpg';
 
-type ArticlesList = Array<{url: string, author: string, title: string, text: string}>;
+type ArticlesList = Array<{ url: string, author: string, title: string, text: string }>;
 
 export const Articles = () => {
     const articlesList: ArticlesList = [
@@ -35,16 +35,22 @@ export const Articles = () => {
         }
     ];
 
-    return articlesList.map((article, index) => (
-        <section className={styles.article} key={index}>
-            <img src={article.url} alt="notice image" />
-            <div>
-                <address rel="author">{article.author}</address>
-                <a href="">
-                    <h1>{article.title}</h1>
-                </a>
-                <p>{article.text}</p>
-            </div>
-        </section>
-    ));
+    return (
+        <div className={styles.containerArticles}>
+            {
+                articlesList.map((article, index) => (
+                    <section className={styles.article} key={index}>
+                        <img src={article.url} alt="notice image" />
+                        <div>
+                            <address rel="author">{article.author}</address>
+                            <a href="">
+                                <h1>{article.title}</h1>
+                            </a>
+                            <p>{article.text}</p>
+                        </div>
+                    </section>
+                ))
+            }
+        </div>
+    )
 };

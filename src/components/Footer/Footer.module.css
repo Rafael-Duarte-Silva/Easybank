@@ -19,8 +19,7 @@
 }
 
 .containerSocialMedias div{
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0.5vw, 1fr));
+    display: flex;
     column-gap: 1vw;
 }
 
@@ -81,9 +80,9 @@
     }
 
     .containerSocialMedias div{
-        margin-top: 4vh;
-
         column-gap: 4vw;
+
+        margin-top: 4vh;
     }
 
     .containerFooterLinks{

@@ -45,17 +45,13 @@ export const App = () => {
             your finances like never before.
           </p>
 
-          <div className={styles.containerBenefits}>
-            <Benefits/>
-          </div>
+          <Benefits/>
         </section>
 
         <section className={styles.containerLastArticles}>
           <h1>Latest Articles</h1>
 
-          <div className={styles.containerArticles}>
-            <Articles/>
-          </div>
+          <Articles/>
         </section>
       </main>
 
