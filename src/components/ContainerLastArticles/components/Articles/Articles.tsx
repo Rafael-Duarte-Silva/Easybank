@@ -1,9 +1,9 @@
 import styles from './Articles.module.css';
 
-import imageCurrency from '../../assets/images/image-currency.jpg';
-import imageRestaurant from '../../assets/images/image-restaurant.jpg';
-import imagePlane from '../../assets/images/image-plane.jpg';
-import imageConfetti from '../../assets/images/image-confetti.jpg';
+import imageCurrency from '../../../../assets/images/image-currency.jpg';
+import imageRestaurant from '../../../../assets/images/image-restaurant.jpg';
+import imagePlane from '../../../../assets/images/image-plane.jpg';
+import imageConfetti from '../../../../assets/images/image-confetti.jpg';
 
 type ArticlesList = Array<{ url: string, author: string, title: string, text: string }>;
 
@@ -40,7 +40,7 @@ export const Articles = () => {
             {
                 articlesList.map((article, index) => (
                     <article className={styles.article} key={index}>
-                        <img src={article.url} alt="notice image" />
+                        <img src={article.url} alt="notice image" loading="lazy" width="600" height="400"/>
                         <div>
                             <address rel="author">{article.author}</address>
                             <a href="">

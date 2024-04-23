@@ -13,7 +13,7 @@ type HeaderProps = {
 export const Header = ({active, toggleMode}: HeaderProps) => {
   return (
     <header className={styles.containerHeader}>
-      <img src={logo} alt="EasyBank logo" />
+      <img src={logo} alt="EasyBank logo" width="139" height="20"/>
 
       <nav className={styles.containerLinks}>
         <ul>
@@ -27,7 +27,7 @@ export const Header = ({active, toggleMode}: HeaderProps) => {
 
       <Hamburger active={active} toggleMode={toggleMode}/>
 
-      <ButtonRequest />
+      <ButtonRequest className={styles.btnActive}/>
     </header>
   );
 }

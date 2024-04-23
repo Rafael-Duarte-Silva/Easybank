@@ -12,7 +12,7 @@ export const Hamburger = ({active, toggleMode}: HamburgerProps) => {
     return (
         <>
             <div className={styles.Hamburger} onClick={toggleMode}>
-                <img src={active ? iconCloseHamburger : iconOpenHamburger} alt="menu" />
+                <img src={active ? iconCloseHamburger : iconOpenHamburger} alt="menu" width="24" height="11"/>
             </div>
         </>
     );

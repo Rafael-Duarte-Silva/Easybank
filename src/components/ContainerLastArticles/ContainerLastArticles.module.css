@@ -1,0 +1,34 @@
+.containerLastArticles{
+    width: 100%;
+    height: max-content;
+
+    box-sizing: border-box;
+    padding: 80px 120px;
+
+    background-color: var(--veryLightGray);
+}
+
+.containerLastArticles > h1{
+    font-weight: 400;
+    font-size: clamp(1.875rem, 1.655rem + 0.939vw, 2.5rem);
+
+    color: var(--darkBlue);
+
+    margin-top: 0;
+}
+
+@media screen and (max-width: 800px){
+    .containerLastArticles{
+        height: max-content;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 60px 30px;
+    }
+
+    .containerLastArticles > h1{
+        margin-bottom: 0;
+    }
+}

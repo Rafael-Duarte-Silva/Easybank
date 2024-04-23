@@ -51,7 +51,7 @@
         padding-inline: 20px;
     }
 
-    .containerLinks, .containerHeader button{
+    .containerLinks, .btnActive{
         display: none;
     }
 }

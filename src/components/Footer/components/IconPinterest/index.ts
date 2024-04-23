@@ -1,0 +1,1 @@
+export { IconPinterest } from './IconPinterest';

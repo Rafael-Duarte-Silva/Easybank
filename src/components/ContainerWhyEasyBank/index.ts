@@ -1,0 +1,1 @@
+export { ContainerWhyEasyBank } from './ContainerWhyEasyBank';

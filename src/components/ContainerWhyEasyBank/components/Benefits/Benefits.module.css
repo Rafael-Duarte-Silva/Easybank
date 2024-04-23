@@ -6,26 +6,35 @@
 }
 
 .benefit h2{
-    font-size: 25px;
+    font-size: clamp(1.25rem, 1.14rem + 0.469vw, 1.563rem);
     font-weight: 400;
 
     color: var(--darkBlue);
 }
 
 .benefit p{
-    font-size: 18px;
+    font-size: clamp(0.875rem, 0.787rem + 0.376vw, 1.125rem);
     font-weight: 400;
 
     color: var(--grayishBlue);
 
-    text-align: left;
+    text-align: start;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1000px){
     .containerBenefits{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        grid-gap: 1.5vh 3vw;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .containerBenefits{
+        display: flex;
         flex-direction: column;
-        column-gap: 0;
-        row-gap: 3vh;
+        grid-gap: 3vh 0;
     
         margin-top: 4.5vh;
     }
@@ -36,13 +45,5 @@
 
     .benefit h2, .benefit p{
         text-align: center;
-    }
-
-    .benefit h2{
-        font-size: 20px;
-    }
-
-    .benefit p{
-        font-size: 14px;
     }
 }

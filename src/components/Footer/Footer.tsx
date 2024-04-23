@@ -2,42 +2,34 @@ import styles from './Footer.module.css';
 
 import logoWhite from '../../assets/logos/logoWhite.svg';
 
-import iconFacebook from '../../assets/icons/icon-facebook.svg';
-import iconYoutube from '../../assets/icons/icon-youtube.svg';
-import iconTwitter from '../../assets/icons/icon-twitter.svg';
-import iconPinterest from '../../assets/icons/icon-pinterest.svg';
-import iconInstagram from '../../assets/icons/icon-instagram.svg';
-
-import iconActiveFacebook from '../../assets/icons/icon-activeFacebook.svg';
-import iconActiveYoutube from '../../assets/icons/icon-activeYoutube.svg';
-import iconActiveTwitter from '../../assets/icons/icon-activeTwitter.svg';
-import iconActivePinterest from '../../assets/icons/icon-activePinterest.svg';
-import iconActiveInstagram from '../../assets/icons/icon-activeInstagram.svg';
-
-import { SocialIcon } from './components/SocialIcon';
+import { IconFacebook } from './components/IconFacebook';
+import { IconYoutube } from './components/IconYoutube';
+import { IconTwitter } from './components/IconTwitter';
+import { IconPinterest } from './components/IconPinterest';
+import { IconInstagram } from './components/IconInstagram';
 import { ButtonRequest } from '../ButtonRequest';
 
 export const Footer = () => {
   return (
     <footer className={styles.containerFooter}>
       <div className={styles.containerSocialMedias}>
-        <img src={logoWhite} alt="EasyBank logo" />
+        <img src={logoWhite} alt="EasyBank logo" loading="lazy" width="139" height="20"/>
 
         <div>
           <a href="https://www.facebook.com/" target="_blank">
-            <SocialIcon activeIcon={iconActiveFacebook} icon={iconFacebook} alt='Facebook icon' />
+            <IconFacebook/>
           </a>
           <a href="https://www.youtube.com/" target="_blank">
-            <SocialIcon activeIcon={iconActiveYoutube} icon={iconYoutube} alt='Youtube icon' />
+            <IconYoutube/>
           </a>
           <a href="https://www.twitter.com/" target="_blank">
-            <SocialIcon activeIcon={iconActiveTwitter} icon={iconTwitter} alt='Twitter icon' />
+            <IconTwitter/>
           </a>
           <a href="https://www.pinterest.com/" target="_blank">
-            <SocialIcon activeIcon={iconActivePinterest} icon={iconPinterest} alt='Pinterest icon' />
+            <IconPinterest/>
           </a>
           <a href="https://www.instagram.com/" target="_blank">
-            <SocialIcon activeIcon={iconActiveInstagram} icon={iconInstagram} alt='Instagram icon' />
+            <IconInstagram/>
           </a>
         </div>
       </div>

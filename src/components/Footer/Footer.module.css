@@ -23,6 +23,10 @@
     column-gap: 1vw;
 }
 
+.containerSocialMedias div svg:hover path{
+    fill: var(--limeGreen);
+}
+
 .containerFooterLinks{
     width: max-content;
 }

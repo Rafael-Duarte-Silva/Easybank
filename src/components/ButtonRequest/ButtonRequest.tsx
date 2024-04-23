@@ -1,8 +1,12 @@
 import styles from './ButtonRequest.module.css';
 
-export const ButtonRequest = () => {
+type ButtonRequestProps = {
+    className?: string
+}
+
+export const ButtonRequest = ({className}: ButtonRequestProps) => {
     return (
-        <button className={styles.btnRequest}>
+        <button className={`${styles.btnRequest} ${className}`}>
             Request Invite
         </button>
     )

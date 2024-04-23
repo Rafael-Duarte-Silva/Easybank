@@ -1,0 +1,53 @@
+.containerWhyEasyBank{
+    width: 100%;
+    height: max-content;
+
+    box-sizing: border-box;
+    padding: 80px 120px;
+
+    background-color: var(--lightGrayishBlue);
+}
+
+.containerWhyEasyBank > h1{
+    font-weight: 400;
+    font-size: clamp(1.875rem, 1.655rem + 0.939vw, 2.5rem);
+
+    color: var(--darkBlue);
+
+    margin-top: 0;
+}
+
+.containerWhyEasyBank > p{
+    width: 46vw;
+
+    font-size: clamp(0.875rem, 0.787rem + 0.376vw, 1.125rem);
+    font-weight: 400;
+
+    color: var(--grayishBlue);
+
+    text-align: start;
+}
+
+@media screen and (max-width: 800px){
+    .containerWhyEasyBank{
+        height: max-content;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 60px 30px;
+
+        text-align: center;
+    }
+
+    .containerWhyEasyBank > h1{
+        margin-bottom: 0;
+    }
+    
+    .containerWhyEasyBank > p{
+        width: 80vw;
+
+        text-align: center;
+    }
+}

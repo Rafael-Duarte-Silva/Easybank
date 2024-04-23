@@ -1,0 +1,1 @@
+export { ContainerLastArticles } from './ContainerLastArticles';

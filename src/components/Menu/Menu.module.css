@@ -26,7 +26,8 @@
 
     .menu.active div{
         width: 85vw;
-        height: 40vh;
+        min-height: 40vh;
+        height: max-content;
 
         display: flex;
         align-items: center;
@@ -47,11 +48,13 @@
     }
 
     .menu.active div ul li{
+        text-align: center;
+
         margin-block: 3vh;
     }
 
     .menu.active div ul li a{
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 400;
 
         text-decoration: none;
