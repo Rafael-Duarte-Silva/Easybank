@@ -32,7 +32,7 @@
     text-decoration: none;
 }
 
-.article a h2{
+.article h2{
     font-size: clamp(1.125rem, 1.037rem + 0.376vw, 1.375rem);
     font-weight: 400;
 
@@ -41,7 +41,7 @@
     color: var(--darkBlue);
 }
 
-.article a h2:hover{
+.article h2:hover{
     color: var(--limeGreen);
 }
 

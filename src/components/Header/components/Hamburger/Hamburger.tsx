@@ -1,7 +1,7 @@
 import styles from './Hamburger.module.css';
 
-import iconCloseHamburger from '../../../../assets/icons/icon-openHamburger.svg';
-import iconOpenHamburger from '../../../../assets/icons/icon-closeHamburger.svg';
+import { IconCloseHamburger } from './components/IconCloseHamburger';
+import { IconOpenHamburger } from './components/IconOpenHamburger';
 
 type HamburgerProps = {
     active: boolean;
@@ -12,7 +12,7 @@ export const Hamburger = ({active, toggleMode}: HamburgerProps) => {
     return (
         <>
             <div className={styles.Hamburger} onClick={toggleMode}>
-                <img src={active ? iconCloseHamburger : iconOpenHamburger} alt="menu" width="24" height="11"/>
+                {active ? <IconOpenHamburger/> : <IconCloseHamburger/>}
             </div>
         </>
     );

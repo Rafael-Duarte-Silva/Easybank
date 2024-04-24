@@ -23,7 +23,7 @@
     column-gap: 1vw;
 }
 
-.containerSocialMedias div svg:hover path{
+.containerSocialMedias svg:hover path{
     fill: var(--limeGreen);
 }
 
@@ -41,7 +41,7 @@
     padding: 0;
 }
 
-.containerFooterLinks ul li a{
+.containerFooterLinks a{
     font-weight: 400;
 
     text-decoration: none;
@@ -51,7 +51,7 @@
     margin-inline: 1vw;
 }
 
-.containerFooterLinks ul li a:hover{
+.containerFooterLinks a:hover{
     color: var(--limeGreen);
 }
 
@@ -102,11 +102,11 @@
         margin: 0;
     }
 
-    .containerFooterLinks ul li{
+    .containerFooterLinks li{
         margin-block: 1vh;
     }
     
-    .containerFooterLinks ul li a{
+    .containerFooterLinks a{
         margin-inline: 0;
     }
 

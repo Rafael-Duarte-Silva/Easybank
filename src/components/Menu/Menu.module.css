@@ -47,13 +47,13 @@
         padding: 0;
     }
 
-    .menu.active div ul li{
+    .menu.active li{
         text-align: center;
 
         margin-block: 3vh;
     }
 
-    .menu.active div ul li a{
+    .menu.active a{
         font-size: 1.25rem;
         font-weight: 400;
 
@@ -62,7 +62,7 @@
         color: var(--darkBlue);
     }
 
-    .menu.active div ul li a:hover{
+    .menu.active a:hover{
         color: var(--limeGreen);
     }
 }
