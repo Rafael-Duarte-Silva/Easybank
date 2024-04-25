@@ -5,10 +5,14 @@ import iconBudgeting from '../../../../assets/icons/icon-budgeting.svg';
 import iconOnboarding from '../../../../assets/icons/icon-onboarding.svg';
 import iconApi from '../../../../assets/icons/icon-api.svg';
 
-type BenefitsList = Array<{ url: string, title: string, text: string }>;
+type BenefitsList = { 
+    url: string, 
+    title: string, 
+    text: string 
+};
 
 export const Benefits = () => {
-    const benefitsList: BenefitsList = [
+    const benefitsList: BenefitsList[] = [
         {
             url: iconOnline,
             title: 'Online Banking',

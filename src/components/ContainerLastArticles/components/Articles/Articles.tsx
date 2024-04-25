@@ -5,10 +5,15 @@ import imageRestaurant from '../../../../assets/images/image-restaurant.jpg';
 import imagePlane from '../../../../assets/images/image-plane.jpg';
 import imageConfetti from '../../../../assets/images/image-confetti.jpg';
 
-type ArticlesList = Array<{ url: string, author: string, title: string, text: string }>;
+type ArticlesList = { 
+    url: string, 
+    author: string, 
+    title: string, 
+    text: string 
+};
 
 export const Articles = () => {
-    const articlesList: ArticlesList = [
+    const articlesList: ArticlesList[] = [
         {
             url: imageCurrency,
             author: 'By Claire Robinson',
